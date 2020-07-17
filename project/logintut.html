@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>LoginPage</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+    <style>
+      div1 {
+          
+  background-color: lightgrey;
+  width: 300px;
+  border: 5px solid rgb(238, 203, 6);
+  padding: 50px;
+  margin-top: 100px;
+}
+
+.box {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+        
+        </style>
+    </style>
+    <body>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myInput");
+              if (x.type === "password") {
+                x.type = "text";
+              } else {
+                x.type = "password";
+              }
+            }
+            </script>
+        <div class="w3-container w3-blue">
+            <center><h2>Tutor Login</h2></center>
+          </div>
+        <br><br><center><h1>Login Page</h1> </center>
+        <center>
+       
+        <form action="logintut1.php" method="POST">
+            <p>
+                <label>Username</label>
+                <input class="w3-input" type="text" style="width:200px;" name="name"></p>
+                <p>
+                <label>Password</label>
+                <input class="w3-input" type="password" style="width:200px;" name="pwd" id="myInput"></p>
+                <p>
+                    <input type="checkbox" onclick="myFunction()">Show Password
+
+               
+            <br><br>
+            <input type="submit" name="submit" value="submit"><br><br>
+            <a href="regtut.html"><h6>create new account?</h6></a>
+            
+
+        </form>
+     
+     </center>
+    </body>
+</html>

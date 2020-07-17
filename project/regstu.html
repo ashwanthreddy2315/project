@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>Registration</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+    <style>
+      body{
+          
+        background-image:url('images/img3.jpg');
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-attachment: fixed;
+}
+
+.box {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+}
+.required:after {
+    content:" *";
+    color: red;
+  }
+        
+        </style>
+    
+    <body>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myInput");
+              if (x.type === "password") {
+                x.type = "text";
+              } else {
+                x.type = "password";
+              }
+            }
+            function abc()
+            {
+              window.alert("you are succesfully registered");
+            }
+            </script>
+        <br><br><center><h1>Registration Page</h1> </center>
+        <center>
+       
+        <form action="regstu1.php" method="POST">
+            <p>
+                <label>Name</label><label class="required"></label>
+                <input class="w3-input" type="text" style="width:200px;" name="name" required="required"></p>
+                <label class="required"></label>Gender:<br>
+                <input type="radio" name="gender" value="male">Male
+                <input type="radio" name="gender" value="female">Female<br>
+                <p>  
+                <label>EmailId</label><label class="required"></label>
+                <input class="w3-input" type="text" style="width:200px;" name="emailid"  required="required"></p>
+                <p >
+                 <label >Phone Number </label><label class="required"></label>
+                <input class="w3-input" type="text" style="width:200px;" name="phone" minlength="1" maxlength="10" required="required"></p>
+                <p>
+                  <label>UserName</label><label class="required"></label>
+                  <input class="w3-input" type="text" style="width:200px;" name="username" placeholder="create your username" required="required"></p>
+                <p>
+                <label>Password</label><label class="required"></label>
+                <input class="w3-input" type="password" style="width:200px;" name="password" id="myInput" placeholder="create your password" required="required"></p>
+                <input type="checkbox" onclick="myFunction()">Show Password
+                
+            <br><br>
+            <input type="submit" name="submit" value="submit" ><br><br>
+            
+
+        </form>
+     
+     </center>
+    </body>
+</html>
